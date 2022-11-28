@@ -1,0 +1,50 @@
+/****************/
+/* BELOW 1200px */
+@media (max-width: 75.6em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .section-testimonials {
+    background-color: #fdf2e9;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-area {
+    gap: 1.6rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 3.8rem;
+  }
+
+  .section-pricing-content {
+    width: auto;
+  }
+
+  .pricing-plan {
+    width: 75%;
+    height: 65rem;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    gap: 1.6rem;
+  }
+
+  .footer {
+    padding: 6.4rem 0;
+  }
+
+  .logo--footer {
+    height: 2.4rem;
+  }
+
+  .footer-nav {
+    gap: 1.6rem;
+  }
+}
