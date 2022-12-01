@@ -1,30 +1,57 @@
-/****************/
-/* BELOW 1200px */
+/**********************/
+/*    BELOW 1200px    */
+/* LANDSCAPED TABLETS */
 @media (max-width: 75.6em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
   .heading-primary {
+    width: 105%;
     font-size: 4.4rem;
   }
 
   .section-testimonials {
     background-color: #fdf2e9;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .testimonials-headings h2 {
+    width: 105%;
+  }
+
+  .testimonials-headings {
+    padding: 4.8rem 3.2rem !important;
   }
 
   .testimonial-area {
-    gap: 1.6rem;
+    column-gap: 1.6rem;
+  }
+
+  .pricing-plan {
+    width: 75%;
   }
 
   .heading-secondary {
-    margin-bottom: 3.8rem;
+    font-size: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
   }
 
   .section-pricing-content {
     width: auto;
   }
 
-  .pricing-plan {
-    width: 75%;
-    height: 65rem;
+  .cta {
+    height: 45rem;
   }
 
   .cta-text-box {
@@ -46,5 +73,300 @@
 
   .footer-nav {
     gap: 1.6rem;
+  }
+}
+
+/*********************/
+/*    BELOW 990px    */
+/*      TABLETS      */
+@media (max-width: 62em) {
+  .hero-text-box {
+    padding-right: 3.2rem;
+  }
+
+  .hero-text-box h1 {
+    width: 110%;
+  }
+
+  .delivery-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logos img {
+    height: 2.8rem;
+  }
+
+  .section-how {
+    padding: 4.8rem 0;
+  }
+
+  .section-how-content {
+    width: 85%;
+  }
+
+  .section-meals {
+    padding: 4.8rem 0;
+  }
+
+  .meals-container {
+    grid-template-rows: 100%;
+    height: 48rem;
+    column-gap: 3.6rem;
+  }
+
+  .diets {
+    padding: 1.8rem 0;
+  }
+
+  .diets-list {
+    margin-top: 0;
+    gap: 1.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .testimonials-headings {
+    padding: 6.4rem !important;
+  }
+
+  .testimonial-area {
+    gap: 4.8rem;
+  }
+
+  .gallery {
+    width: 85%;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 6.4rem;
+  }
+
+  .plan-details {
+    margin-bottom: 0;
+  }
+
+  .feature-container {
+    padding: 3.6rem;
+    gap: 2.4rem;
+  }
+
+  .feature-title {
+    font-size: 2rem;
+  }
+
+  .section-pricing {
+    padding-bottom: 3.6rem;
+  }
+
+  .pricing-plan {
+    width: 90%;
+  }
+
+  .section-cta {
+    padding-bottom: 6.4rem;
+  }
+
+  .cta-text-box .heading-secondary {
+    margin-bottom: 2.8rem;
+  }
+
+  .cta-text-box .cta-text {
+    margin-bottom: 3.6rem;
+  }
+
+  .footer {
+    padding: 4.8rem 0;
+  }
+
+  .footer-heading {
+    margin-bottom: 2.4rem;
+  }
+}
+
+/*********************/
+/*    BELOW 800px    */
+/*  SMALLER TABLETS  */
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+
+  .margin-bottom-md {
+    margin-bottom: 3.6rem !important;
+  }
+
+  .header {
+    padding: 0 3.4rem;
+  }
+
+  .logo {
+    height: 1.8rem;
+  }
+
+  .main-nav-list {
+    gap: 2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0 6.4rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box h1 {
+    width: 100%;
+  }
+
+  .delivery-info {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3.6rem;
+  }
+
+  .delivery-text {
+    margin-right: 0;
+  }
+
+  .hero-img-box {
+    width: 60%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meals-container {
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .diets .list-icon {
+    display: none;
+  }
+
+  .meal-content {
+    padding: 2.4rem 2.8rem 2.8rem 2.8rem;
+  }
+
+  .meal {
+    height: 50rem;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    /* gap: 3.2rem; */
+  }
+
+  .diets .diets-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .gallery {
+    width: 90%;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-plan {
+    padding: 6.4rem 3.6rem;
+  }
+
+  .plan-name {
+    margin-bottom: 1.6rem;
+  }
+
+  .plan-header {
+    margin-bottom: 3.6rem;
+  }
+
+  .diet {
+    gap: 1.6rem;
+  }
+
+  .feature-icon {
+    margin-bottom: 2.8rem;
+  }
+
+  .cta {
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form--btn {
+    margin-top: 1.6rem;
+  }
+
+  .logo--footer {
+    height: 2rem;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #fdf2e9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 500ms ease-in;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 1. hiding the navbar visually */
+    opacity: 0;
+
+    /* 2. making nav unaccessible to the user */
+    pointer-events: none;
+
+    /* 3. hiding nav from the screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
   }
 }
