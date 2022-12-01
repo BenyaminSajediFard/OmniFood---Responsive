@@ -266,17 +266,21 @@
 
   .diets {
     grid-column: 1 / -1;
-    /* gap: 3.2rem; */
   }
 
   .diets .diets-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    align-items: center;
   }
 
   .gallery {
     width: 90%;
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .section-pricing-content {
+    gap: 3.2rem;
   }
 
   .pricing-plan {
@@ -314,6 +318,10 @@
 
   .logo--footer {
     height: 2rem;
+  }
+
+  .footer-link {
+    line-height: 1.6rem;
   }
 
   /* MOBILE NAV */
@@ -368,5 +376,277 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+/*********************/
+/*    BELOW 670PX    */
+/*    LARGE MOBILE   */
+@media (max-width: 42em) {
+  .heading-featured-in {
+    font-size: 1.2rem;
+  }
+
+  .logos img {
+    height: 1.8rem;
+  }
+
+  .section-how-content {
+    row-gap: 3rem;
+  }
+
+  .meals-container {
+    padding: 0 6.4rem;
+  }
+
+  .diets {
+    padding: 4.8rem 0;
+  }
+
+  .diets .diets-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .meal {
+    height: 45rem;
+  }
+
+  .pricing-plan {
+    padding: 6.4rem 2.4rem;
+  }
+
+  .pricing-plan--complete::after {
+    font-size: 1.2rem;
+    right: -16%;
+    top: 4%;
+  }
+
+  .feature-container {
+    padding: 4.8rem 6.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .cta {
+    padding: 3.6rem;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.8rem;
+    row-gap: 6rem;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .logo-social-col,
+  .address-col {
+    gap: 3rem;
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .logo-social-col {
+    padding: 0 3rem;
+  }
+
+  .nav-col--flex {
+    gap: 2.8rem;
+  }
+}
+
+/**********************/
+/*    BELOW 480PX     */
+/*   MOBILE DEVICES   */
+@media (max-width: 30em) {
+  html {
+    font-size: 45%;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .margin-right-sm {
+    margin: 0 !important;
+  }
+
+  .section-hero {
+    padding: 2.8rem 0 4.8rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+  }
+
+  .hero-desc {
+    margin-bottom: 2.8rem;
+  }
+
+  .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .delivery-info {
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 1.8rem;
+  }
+
+  .hero-img-box {
+    width: 80%;
+  }
+
+  .section-featured-in {
+    padding: 3.6rem 0 2.4rem 0;
+  }
+
+  .logos {
+    padding: 0 4.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* justify-items: center; */
+    gap: 2.8rem;
+    column-gap: 6.4rem;
+  }
+
+  .logos img {
+    height: 2rem;
+  }
+
+  .logos img:last-child {
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  .section-how {
+    padding: 3.6rem 0 0 0;
+  }
+
+  .step-text-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1.6rem;
+  }
+
+  .step-text-box .heading-tertiary {
+    margin-bottom: 0;
+  }
+
+  .step-desc {
+    grid-column: span 2;
+  }
+
+  .step-number {
+    margin-bottom: 0;
+  }
+
+  .step-img {
+    width: 30%;
+  }
+
+  .step-img--first {
+    grid-row: 1;
+  }
+
+  .step-img--third {
+    grid-row: 5;
+  }
+
+  .step-text-box {
+    margin-bottom: 3.6rem;
+  }
+
+  .meals-container {
+    grid-template-rows: 3fr;
+    align-items: center;
+    justify-items: center;
+    gap: 3.6rem;
+  }
+
+  .meal {
+    width: 80%;
+    height: auto;
+  }
+
+  .diets .diets-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+
+  .testimonials-headings {
+    padding: 4.8rem !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 4.8rem;
+  }
+
+  .section-pricing {
+    padding: 3.6rem 0;
+  }
+
+  .section-pricing-content {
+    align-items: center;
+    justify-items: center;
+    gap: 4.8rem;
+  }
+
+  .pricing-plan {
+    padding: 4.8rem 3.6rem;
+    width: 75%;
+    height: auto;
+    justify-self: center;
+  }
+
+  .margin-bottom-md {
+    margin-bottom: 8rem !important;
+  }
+
+  .pricing-plan--complete::after {
+    font-size: 1.2rem;
+    right: -12%;
+    top: 5%;
+  }
+
+  .feature-container {
+    gap: 3.2rem;
+    padding: 4.8rem;
+  }
+
+  .section-cta {
+    padding: 0 0 4.8rem 0;
+  }
+
+  .cta {
+    padding: 0;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
+    height: 45rem;
+  }
+
+  .cta-text-box {
+    padding-top: 4.8rem;
   }
 }
