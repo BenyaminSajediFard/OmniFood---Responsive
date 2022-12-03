@@ -330,7 +330,9 @@
   }
 
   .main-nav {
-    background-color: #fdf2e9;
+    background-color: rgba(253, 242, 233, 0.65);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -594,6 +596,10 @@
 
   .testimonials-headings {
     padding: 4.8rem !important;
+  }
+
+  .testimonial-area {
+    padding: 0 4rem;
   }
 
   .gallery {
